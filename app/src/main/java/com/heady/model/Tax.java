@@ -1,7 +1,5 @@
 package com.heady.model;
 
-import com.google.gson.annotations.SerializedName;
-
 import java.io.Serializable;
 
 public class Tax implements Serializable

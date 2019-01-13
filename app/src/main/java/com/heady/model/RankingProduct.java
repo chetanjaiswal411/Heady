@@ -1,16 +1,14 @@
 package com.heady.model;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class RankingProduct implements Serializable
 {
     private int id;
 
     @SerializedName(value = "count",alternate = {"view_count","order_count","shares"})
-    private  String count;
+    private  int count;
 
     public int getId() {
         return id;
@@ -20,11 +18,11 @@ public class RankingProduct implements Serializable
         this.id = id;
     }
 
-    public String getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(String count) {
+    public void setCount(int count) {
         this.count = count;
     }
 }

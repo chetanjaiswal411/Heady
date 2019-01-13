@@ -1,7 +1,5 @@
 package com.heady.model;
 
-import com.google.gson.annotations.SerializedName;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -11,6 +9,16 @@ public class Categories implements Serializable
     private String name;
 
     private ArrayList<Products> products;
+
+    private ArrayList<Integer> child_categories;
+
+    public ArrayList<Integer> getChild_categories() {
+        return child_categories;
+    }
+
+    public void setChild_categories(ArrayList<Integer> child_categories) {
+        this.child_categories = child_categories;
+    }
 
     public int getId() {
         return id;
